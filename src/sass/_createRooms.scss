@@ -1,0 +1,71 @@
+@use './colors' as *;
+.createRooms{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem 0;
+    .container{
+        position: relative;
+    }
+    .fm{
+        padding: 0.5rem 0 0 0;
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+        cursor: pointer;
+        background-color: $primary;
+        border-radius: 2em;
+    }
+    .selected{
+        width: 99px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    
+    span{
+        font-size: .8rem;
+        position: absolute;
+       
+        display: flex;
+        gap: 1em;
+        margin-top: .4rem;
+        cursor: pointer;
+        left: 178px;
+        align-items: center;
+    }
+    textarea{
+        
+        border: 1px solid;
+        resize: none;
+       
+    }
+}
+
+.imgw-2{
+    width: 5rem;
+    align-self: center;
+}
+.pointer{
+    cursor: pointer;
+
+}
+
+@media(min-width:700px) {
+    
+    .form.s{
+        margin-top: -.2rem;
+    }
+    .createRooms{
+        span{
+            left: 385px;
+        }
+        textarea{
+            font-size: 1.1rem;
+        }
+    }
+    .pointer{
+        font-size: 1.2rem;
+    }
+    
+}

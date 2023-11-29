@@ -1,0 +1,17 @@
+@use './sass/global_rules';
+// auth pages
+@use './sass/authentication';
+
+// home page
+
+@use './sass/home';
+
+//rooms page
+
+@use './sass/joinRooms';
+
+//create rooms page
+
+@use './sass/createRooms';
+
+
